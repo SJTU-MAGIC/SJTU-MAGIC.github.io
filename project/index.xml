@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Siheng Chen | SJTU-MAGIC</title>
-    <link>https://sjtu-magic.github.io/author/siheng-chen/</link>
-      <atom:link href="https://sjtu-magic.github.io/author/siheng-chen/index.xml" rel="self" type="application/rss+xml" />
-    <description>Siheng Chen</description>
+    <title>Projects | SJTU-MAGIC</title>
+    <link>https://sjtu-magic.github.io/project/</link>
+      <atom:link href="https://sjtu-magic.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 18 Apr 2022 19:34:19 +0800</lastBuildDate>
     <image>
       <url>https://sjtu-magic.github.io/media/logo_hufe4902d8a3e296f954ced894ecfc599d_303890_300x300_fit_lanczos_3.png</url>
-      <title>Siheng Chen</title>
-      <link>https://sjtu-magic.github.io/author/siheng-chen/</link>
+      <title>Projects</title>
+      <link>https://sjtu-magic.github.io/project/</link>
     </image>
     
     <item>
@@ -74,6 +74,14 @@ Prediction cases with corresponding past-future trajectories traced by memory ad
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;acknowledgement&#34;&gt;Acknowledgement&lt;/h2&gt;
 &lt;p&gt;This research is partially supported by the National Key R&amp;amp;D Program of China under Grant 2021ZD0112801, National Natural Science Foundation of China under Grant 62171276, the Science and Technology Commission of Shanghai Municipal under Grant 21511100900 and CCF-DiDi GAIA Research Collaboration Plan 202112.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://sjtu-magic.github.io/project/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sjtu-magic.github.io/project/project/</guid>
+      <description></description>
     </item>
     
   </channel>
