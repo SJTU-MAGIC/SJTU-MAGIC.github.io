@@ -5,12 +5,21 @@
     <link>https://sjtu-magic.github.io/author/chenxin-xu/</link>
       <atom:link href="https://sjtu-magic.github.io/author/chenxin-xu/index.xml" rel="self" type="application/rss+xml" />
     <description>Chenxin Xu</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 18 Apr 2022 19:34:19 +0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 19 Apr 2022 20:07:44 +0800</lastBuildDate>
     <image>
       <url>https://sjtu-magic.github.io/media/icon_hufe4902d8a3e296f954ced894ecfc599d_303890_512x512_fill_lanczos_center_3.png</url>
       <title>Chenxin Xu</title>
       <link>https://sjtu-magic.github.io/author/chenxin-xu/</link>
     </image>
+    
+    <item>
+      <title>Groupnet</title>
+      <link>https://sjtu-magic.github.io/project/groupnet/</link>
+      <pubDate>Tue, 19 Apr 2022 20:07:44 +0800</pubDate>
+      <guid>https://sjtu-magic.github.io/project/groupnet/</guid>
+      <description>&lt;h2 id=&#34;to-be-published&#34;&gt;To Be Published&lt;/h2&gt;
+</description>
+    </item>
     
     <item>
       <title>Remember Intentions: Retrospective-Memory-based Trajectory Prediction</title>
