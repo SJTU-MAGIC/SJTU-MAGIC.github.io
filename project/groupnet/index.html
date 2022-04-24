@@ -60,7 +60,7 @@
   
     
   
-  <meta name="description" content="Group-wise interaction capturing and representation learning" />
+  <meta name="description" content="GroupNet, a multiscale hypergraph neural network, which is novel in terms of both interaction capturing and representation learning." />
 
   
   <link rel="alternate" hreflang="en-us" href="https://sjtu-magic.github.io/project/groupnet/" />
@@ -253,7 +253,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.3787e57ff187bf4497229f56cc9a47c6.css" />
+  <link rel="stylesheet" href="/css/wowchemy.329bdd4a7244efaf6bd951769bcb616c.css" />
 
   
 
@@ -306,17 +306,17 @@
   
   <meta property="og:site_name" content="SJTU-MAGIC" />
   <meta property="og:url" content="https://sjtu-magic.github.io/project/groupnet/" />
-  <meta property="og:title" content="GroupNet | SJTU-MAGIC" />
-  <meta property="og:description" content="Group-wise interaction capturing and representation learning" /><meta property="og:image" content="https://sjtu-magic.github.io/project/groupnet/featured.jpg" />
+  <meta property="og:title" content="GroupNet: Multiscale Hypergraph Neural Networks for Trajectory Prediction with Relational Reasoning | SJTU-MAGIC" />
+  <meta property="og:description" content="GroupNet, a multiscale hypergraph neural network, which is novel in terms of both interaction capturing and representation learning." /><meta property="og:image" content="https://sjtu-magic.github.io/project/groupnet/featured.jpg" />
     <meta property="twitter:image" content="https://sjtu-magic.github.io/project/groupnet/featured.jpg" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2022-04-19T20:07:44&#43;08:00"
+        content="2022-04-18T19:34:19&#43;08:00"
       />
     
-    <meta property="article:modified_time" content="2022-04-19T20:07:44&#43;08:00">
+    <meta property="article:modified_time" content="2022-04-18T19:34:19&#43;08:00">
   
 
   
@@ -340,14 +340,14 @@
     "@type": "WebPage",
     "@id": "https://sjtu-magic.github.io/project/groupnet/"
   },
-  "headline": "GroupNet",
+  "headline": "GroupNet: Multiscale Hypergraph Neural Networks for Trajectory Prediction with Relational Reasoning",
   
   "image": [
     "https://sjtu-magic.github.io/project/groupnet/featured.jpg"
   ],
   
-  "datePublished": "2022-04-19T20:07:44+08:00",
-  "dateModified": "2022-04-19T20:07:44+08:00",
+  "datePublished": "2022-04-18T19:34:19+08:00",
+  "dateModified": "2022-04-18T19:34:19+08:00",
   
   "author": {
     "@type": "Person",
@@ -362,7 +362,7 @@
       "url": "https://sjtu-magic.github.io/media/icon_hufe4902d8a3e296f954ced894ecfc599d_303890_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Group-wise interaction capturing and representation learning"
+  "description": "GroupNet, a multiscale hypergraph neural network, which is novel in terms of both interaction capturing and representation learning."
 }
 </script>
 
@@ -378,7 +378,7 @@
 
 
 
-  <title>GroupNet | SJTU-MAGIC</title>
+  <title>GroupNet: Multiscale Hypergraph Neural Networks for Trajectory Prediction with Relational Reasoning | SJTU-MAGIC</title>
 </head>
 
 
@@ -627,7 +627,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>GroupNet</h1>
+  <h1>GroupNet: Multiscale Hypergraph Neural Networks for Trajectory Prediction with Relational Reasoning</h1>
 
   
 
@@ -645,6 +645,9 @@
 
   <span >
       <a href="/author/chenxin-xu/">Chenxin Xu</a></span>, <span >
+      <a href="/author/maosen-li/">Maosen Li</a></span>, <span >
+      <a href="/author/zhenyang-ni/">Zhenyang Ni</a></span>, <span >
+      <a href="/author/ya-zhang/">Ya Zhang</a></span>, <span >
       <a href="/author/siheng-chen/">Siheng Chen</a></span>
   </div>
   
@@ -656,7 +659,7 @@
     
       
     
-    Apr 19, 2022
+    Apr 18, 2022
   </span>
   
 
@@ -679,6 +682,70 @@
 
 
 
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/2204.08770" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="https://github.com/MediaBrain-SJTU/GroupNet" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="/TBD" >
+    <i class="fab fa-zhihu mr-1"></i>Zhihu</a>
+
+
+</div>
+
 
 </div>
 
@@ -695,7 +762,85 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h2 id="coming-soon">Coming Soon</h2>
+      <h2 id="abstract">Abstract</h2>
+<p>Demystifying the interactions among multiple agents from their past trajectories is fundamental to precise and interpretable trajectory prediction. However, previous works only consider pair-wise interactions with limited relational reasoning. To promote more comprehensive interaction modeling for relational reasoning, we propose GroupNet, a multiscale hypergraph neural network, which is novel in terms of both interaction capturing and representation learning. From the aspect of interaction capturing, we propose a trainable multiscale hypergraph to capture both pair-wise and group-wise interactions at multiple group sizes. From the aspect of interaction representation learning, we propose a three-element format that can be learnt end-to-end and explicitly reason some relational factors including the interaction strength and category. We apply GroupNet into both CVAE-based prediction system and previous state-of-the-art prediction systems for predicting socially plausible trajectories with relational reasoning. To validate the ability of relational reasoning, we experiment with synthetic physics simulations to reflect the ability to capture group behaviors, reason interaction strength and interaction category. To validate the effectiveness of prediction, we conduct extensive experiments on three real-world trajectory prediction datasets, including NBA, SDD and ETH-UCY; and we show that with GroupNet, the CVAE-based prediction system outperforms state-of-the-art methods. We also show that adding GroupNet will further improve the performance of previous state-of-the-art prediction systems.</p>
+<h2 id="result">Result</h2>
+<h3 id="on-the-relational-reasoning">On the relational reasoning</h3>
+<p>Visualization of learnt group behavior. (a) The particle trajectories containing a three-group with a light bar, a two-group with a spring and an individual particle. (b) The heatmap of the learnt affinity matrix via affinity modeling. (c) The multiscale hypergraph topology via hyperedge forming and the interaction category vector of each hyperedge. The red box represents the three-group and two-group we inferred.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="./images/group_behavior.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Particles&rsquo; trajectories and the curve of neural interaction strength with particle&rsquo;s electric charge. We see that the neural interaction strength has a proportional relationship with the amount of charge, reflecting our model is capable to implicitly capture the interaction strength in an unsupervised manner.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="./images/strength.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Visualization results on the NBA dataset. We plot the best trajectory among 20 predictions for the state-of-the-art method (NMMP), GroupNet with the CVAE framework (Ours) and ground truth (GT). The red/blue color represents players of two teams and the green color represents the basketball. Light color represents the past trajectory.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="./images/nba.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="citation">Citation</h2>
+<pre tabindex="0"><code>@InProceedings{xu2022GroupNet,
+author = {Xu, Chenxin and Li, Maosen and Ni, Zhenyang and Zhang, Ya and Chen, Siheng},
+title = {GroupNet: Multiscale Hypergraph Neural Networks for Trajectory Prediction with Relational Reasoning},
+booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+year = {2022}
+}
+</code></pre><h2 id="acknowledgement">Acknowledgement</h2>
+<p>This research is partially supported by the National Key R&amp;D Program of China under Grant 2021ZD0112801, National Natural Science Foundation of China under Grant 62171276, the Science and Technology Commission of Shanghai Municipal under Grant 21511100900 and CCF-DiDi GAIA Research Collaboration Plan 202112.</p>
 
     </div>
 
@@ -717,7 +862,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://sjtu-magic.github.io/project/groupnet/&amp;text=GroupNet" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://sjtu-magic.github.io/project/groupnet/&amp;text=GroupNet:%20Multiscale%20Hypergraph%20Neural%20Networks%20for%20Trajectory%20Prediction%20with%20Relational%20Reasoning" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -730,7 +875,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://sjtu-magic.github.io/project/groupnet/&amp;t=GroupNet" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://sjtu-magic.github.io/project/groupnet/&amp;t=GroupNet:%20Multiscale%20Hypergraph%20Neural%20Networks%20for%20Trajectory%20Prediction%20with%20Relational%20Reasoning" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -743,7 +888,7 @@
       
       
       <li>
-        <a href="mailto:?subject=GroupNet&amp;body=https://sjtu-magic.github.io/project/groupnet/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=GroupNet:%20Multiscale%20Hypergraph%20Neural%20Networks%20for%20Trajectory%20Prediction%20with%20Relational%20Reasoning&amp;body=https://sjtu-magic.github.io/project/groupnet/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -756,7 +901,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://sjtu-magic.github.io/project/groupnet/&amp;title=GroupNet" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https://sjtu-magic.github.io/project/groupnet/&amp;title=GroupNet:%20Multiscale%20Hypergraph%20Neural%20Networks%20for%20Trajectory%20Prediction%20with%20Relational%20Reasoning" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -769,7 +914,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=GroupNet%20https://sjtu-magic.github.io/project/groupnet/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=GroupNet:%20Multiscale%20Hypergraph%20Neural%20Networks%20for%20Trajectory%20Prediction%20with%20Relational%20Reasoning%20https://sjtu-magic.github.io/project/groupnet/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -782,7 +927,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://sjtu-magic.github.io/project/groupnet/&amp;title=GroupNet" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://sjtu-magic.github.io/project/groupnet/&amp;title=GroupNet:%20Multiscale%20Hypergraph%20Neural%20Networks%20for%20Trajectory%20Prediction%20with%20Relational%20Reasoning" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -874,13 +1019,257 @@
   <div class="media author-card content-widget-hr">
     
       
+      <a href="/author/maosen-li/"><img class="avatar mr-3 avatar-circle" src="/author/maosen-li/avatar_hu1912390a42ad509cf7f0e2d9cc67e852_31863_270x270_fill_q75_lanczos_center.jpg" alt="Maosen Li"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/maosen-li/">Maosen Li</a></h5>
+      <h6 class="card-subtitle">Ph.D student</h6>
+      <p class="card-text">Ph.D student at Shanghai Jiao Tong University</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:maosen_li@sjtu.edu.cn" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/maosen-li-813b76139/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=Qkx2FKoAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/limaosen0" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/author/zhenyang-ni/"><img class="avatar mr-3 avatar-circle" src="/author/zhenyang-ni/avatar_hu3834640375bbcddb12a70fd08ba1d9eb_85541_270x270_fill_q75_lanczos_center.jpg" alt="Zhenyang Ni"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/zhenyang-ni/">Zhenyang Ni</a></h5>
+      <h6 class="card-subtitle">B.A. student</h6>
+      <p class="card-text">B.Eng. student at Shanghai Jiao Tong University</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:0107nzy@sjtu.edu.cn" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/zhenyang-ni-111876236/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/VincentNi0107" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/author/ya-zhang/"><img class="avatar mr-3 avatar-circle" src="/author/ya-zhang/avatar_hu5d0bd6409862c053989bc5827c2c472d_63964_270x270_fill_q75_lanczos_center.jpg" alt="Ya Zhang"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/ya-zhang/">Ya Zhang</a></h5>
+      <h6 class="card-subtitle">Professor</h6>
+      <p class="card-text">Professor at Shanghai Jiao Tong University.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:ya_zhang@sjtu.edu.cn" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=pbjw9sMAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://mediabrain.sjtu.edu.cn/yazhang/" target="_blank" rel="noopener">
+        <i class="fas fa-link"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
       <a href="/author/siheng-chen/"><img class="avatar mr-3 avatar-circle" src="/author/siheng-chen/avatar_huf813d250365c7dfc6749e3158f882118_8352_270x270_fill_q75_lanczos_center.jpg" alt="Siheng Chen"></a>
     
 
     <div class="media-body">
       <h5 class="card-title"><a href="/author/siheng-chen/">Siheng Chen</a></h5>
       <h6 class="card-subtitle">Associate Professor</h6>
-      <p class="card-text">Ph.D. Associate professor at Shanghai Jiao Tong University.</p>
+      <p class="card-text">Associate professor at Shanghai Jiao Tong University.</p>
       <ul class="network-icon" aria-hidden="true">
   
     
@@ -927,6 +1316,23 @@
     <li>
       <a href="https://www.linkedin.com/in/siheng-chen-705b2832/" target="_blank" rel="noopener">
         <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://mediabrain.sjtu.edu.cn/sihengc/" target="_blank" rel="noopener">
+        <i class="fas fa-link"></i>
       </a>
     </li>
   
