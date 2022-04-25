@@ -638,7 +638,44 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>
+      <details class="toc-inpage d-print-none  " open>
+  <summary class="font-weight-bold">Table of Contents</summary>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#about-coperception-uav-dataset">About Coperception-UAV Dataset</a></li>
+    <li><a href="#simulation-setting">Simulation Setting</a>
+      <ul>
+        <li><a href="#swarm-arrangement">Swarm arrangement</a></li>
+        <li><a href="#sensor-setup">Sensor Setup</a></li>
+      </ul>
+    </li>
+    <li><a href="#data">Data</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#citation">Citation</a></li>
+  </ul>
+</nav>
+</details>
+
+<h2 id="about-coperception-uav-dataset">About Coperception-UAV Dataset</h2>
+<!-- 
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<video controls  >
+  <source src="/dataset/coperception-uav/images/vis.mp4" type="video/mp4">
+</video> -->
+<p>
 
 
 
@@ -656,10 +693,9 @@
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="./images/vis.mp4" alt="" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img src="images/vis.mp4" alt="" loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<h2 id="about-coperception-uav-dataset">About Coperception-UAV Dataset</h2>
 <p>Coperception-UAV is the first comprehensive dataset for UAV-based collaborative perception.</p>
 <p>A UAV swarm has the potential to distribute tasks and achieve better, faster, and more robust performances than a single UAV. To realize this, we need to integrate collaboration ability into the entire pipeline, including perception, planning, control. Among those tasks, collaborative perception enables holistic scene understanding from multiple perspectives via the collaboration of multiple UAVs, which could fundamentally resolve the occlusion issue and the long-range issue in the traditional single-agent perception. Recently, planning and control of a UAV swarm have been intensively studied; however, the collaborative perception remains under-explored due to the lack of a comprehensive dataset. This work aims to fill this gap and proposes a collaborative perception dataset for UAV swarm.</p>
 <p>Based on the co-simulation platform of AirSim and CARLA, our dataset consists of 131.9k synchronous images collected from 5 coordinated UAVs flying at 3 altitudes over 3 simulated towns with 2 swarm formations. Each image is fully annotated with the pixel-wise semantic segmentation labels and 2D/3D bounding boxes of vehicles. We further build a benchmark on the proposed dataset by evaluating a variety of related multi-agent collaborative methods on multiple perception tasks, including object detection, semantic segmentation, and bird’seye-view (BEV) semantic segmentation.</p>
@@ -680,13 +716,17 @@
 
 
 
-
-
-<figure  >
+<figure  id="figure-formation">
   <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="./images/formation.png" alt="" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img alt="" srcset="
+               /dataset/coperception-uav/images/formation_hu92eb0a8a8422730f2995c25e85a3fd24_207658_ecdf1c7b13f8354e724f1206151c59bd.webp 400w,
+               /dataset/coperception-uav/images/formation_hu92eb0a8a8422730f2995c25e85a3fd24_207658_293de8e7d8ffe92841bcf16d27ff9636.webp 760w,
+               /dataset/coperception-uav/images/formation_hu92eb0a8a8422730f2995c25e85a3fd24_207658_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/dataset/coperception-uav/images/formation_hu92eb0a8a8422730f2995c25e85a3fd24_207658_ecdf1c7b13f8354e724f1206151c59bd.webp"
+               width="714"
+               height="329"
+               loading="lazy" data-zoomable /></div>
   </div></figure>
-
 The UAV swarm moves and executes tasks in the three-dimensional space, where the situation could be much more complex than those of vehicles or roadside units. In the dataset, two main factors are taken into consideration that may affect the perception
 and collaboration patterns of UAV swarms: flight formation and altitude. Each UAV swarm consists of 5 UAVs. We arrange two types of formation modes for a UAV swarm: discipline mode, where all 5 UAVs keeps a consistent and relatively static array, and dynamic mode, where each UAV navigates independently in the scene. The former simulates the situation where the swarm of UAVs is executing a same specific task such as exploring an unknown area, search and rescue; while the latter simulates the monitoring and patrolling tasks in the city.</p>
 <h3 id="sensor-setup">Sensor Setup</h3>
@@ -714,7 +754,7 @@ and collaboration patterns of UAV swarms: flight formation and altitude. Each UA
 <p>In the UAV swarm, Each UAV is equipped with 5 RGB cameras in 5 directions and 5 semantic cameras collecting semantic ground truth for RGB cameras.</p>
 <ul>
 <li>90° horizontal FoV</li>
-<li>1 bird’s eye view camera and 4 cameras facing forward, backward, right, and left with a pitch degree of −45◦</li>
+<li>1 bird’s eye view camera and 4 cameras facing forward, backward, right, and left with a pitch degree of −45°</li>
 <li>image size: 800x450 pixels</li>
 </ul>
 <h2 id="data">Data</h2>
