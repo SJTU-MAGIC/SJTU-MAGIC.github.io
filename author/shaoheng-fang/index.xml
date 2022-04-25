@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title></title>
+      <title>Coperception-UAV Dataset</title>
       <link>https://sjtu-magic.github.io/dataset/coperception-uav/</link>
       <pubDate>Tue, 19 Apr 2022 20:07:44 +0800</pubDate>
       <guid>https://sjtu-magic.github.io/dataset/coperception-uav/</guid>
@@ -87,7 +87,7 @@ and collaboration patterns of UAV swarms: flight formation and altitude. Each UA
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./images/snesor.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./images/sensor.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;In the UAV swarm, Each UAV is equipped with 5 RGB cameras in 5 directions and 5 semantic cameras collecting semantic ground truth for RGB cameras.&lt;/p&gt;
@@ -146,7 +146,8 @@ and collaboration patterns of UAV swarms: flight formation and altitude. Each UA
 &lt;/p&gt;
 &lt;p&gt;The dataset is organized in a similar way with the widelyused autonomous driving dataset, nuScenes; so it can be used directly with the well-established nuScenes-devkit.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
-</description>
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;To Be Done
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>
